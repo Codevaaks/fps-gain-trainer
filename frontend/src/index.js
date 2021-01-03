@@ -4,7 +4,7 @@ import {BrowserRouter, Route, Switch,Link} from 'react-router-dom';
 import Page1 from './routes/page1';
 import Page2 from './routes/page2';
 import Page3 from './routes/page3';
-import scoreForm from './components/scoreForm';
+import ScoreForm from './components/scoreForm';
 import './index.css';
 
 
@@ -45,7 +45,7 @@ function App(){
                         <Page3 />
                     </Route>
                     <Route path="/upload">
-                        <scoreForm />
+                        <ScoreForm />
                     </Route>
                 </Switch>
             </main>

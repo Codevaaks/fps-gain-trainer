@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
-class scoreForm extends Component{
-    constructor(props){
+class ScoreForm extends Component {
+    constructor(props) {
         super(props);
         this.state = {
             score1: "",
@@ -15,26 +15,26 @@ class scoreForm extends Component{
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    changeScore1(event){
+    changeScore1(event) {
         this.setState({score1: event.target.value});
     }
 
-    changeScore2(event){
+    changeScore2(event) {
         this.setState({score2: event.target.value});
     }
 
-    changeScore3(event){
+    changeScore3(event) {
         this.setState({score3: event.target.value});
     }
 
-    handleSubmit(event){
+    handleSubmit(event) {
         console.log(`score 1 ${this.state.score1}`);
         console.log(`score 2 ${this.state.score2}`);
         console.log(`score 3 ${this.state.score3}`);
         event.preventDefault();
     }
 
-    render(){
+    render() {
         return(
             <form onSubmit={this.handleSubmit}>
                 <label>
@@ -55,4 +55,4 @@ class scoreForm extends Component{
     }
 }
 
-export default scoreForm;
+export default ScoreForm;
